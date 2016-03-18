@@ -1,5 +1,8 @@
 <?php
 
+echo 'Working...';
+exit;
+
 $relative = '.';
 require './includes/common.php';
 
