@@ -1,0 +1,8 @@
+.body-content ul {
+	list-style: inside none disc;
+    margin: 15px;
+}
+.body-content ul li {}
+.body-content form {
+	width: 50%;
+}

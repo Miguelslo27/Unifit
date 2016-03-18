@@ -1,0 +1,125 @@
+div#administrative-tools {
+	display: table;
+	height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+	background: rgba(0, 0, 0, 0.85);
+	border-right: 2px solid #fff;
+	box-shadow: 2px 0 5px rgba(0,0,0,.8);
+}
+div#administrative-tools.expanded {
+	left: -165px;
+	transition: left .3s;
+}
+div#administrative-tools.expanded:hover {
+	left: 0;
+	transition: left .3s;
+}
+div#administrative-tools ul {
+	display: table-cell;
+	vertical-align: middle;
+/*	position: relative;
+	top: 50%;
+	margin-top: -175px;*/
+}
+div#administrative-tools ul li.admin-tool {
+	position: relative;
+}
+div#administrative-tools ul li.admin-tool.active,
+div#administrative-tools ul li.admin-tool:hover {
+	background: rgba(50, 50, 50, .8);
+}
+div#administrative-tools ul li.admin-tool.active {
+	border-right: 3px solid #00ff00;
+}
+div#administrative-tools ul li.admin-tool a {
+	color: #fff;
+	text-decoration: none;
+}
+div#administrative-tools ul li.admin-tool.active a,
+div#administrative-tools ul li.admin-tool:hover a {
+	color: #0f0;
+}
+div#administrative-tools ul li.admin-tool span {}
+div#administrative-tools ul li.admin-tool span.fa {
+	width: 44px;
+	height: 50px;
+	margin-left: 6px;
+	text-align: center;
+	line-height: 50px;
+}
+div#administrative-tools ul li.admin-tool span.over-label {
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	width: 0;
+
+	transition: all .5s;
+}
+div#administrative-tools ul li.admin-tool span.over-label.globe {
+	line-height: 20px;
+    padding: 0 8px 0 7px;
+}
+div#administrative-tools ul li.admin-tool span.label {
+	display: inline-block;
+	overflow: hidden;
+	margin-bottom: -4px;
+	line-height: 20px;
+}
+div#administrative-tools.expanded ul li.admin-tool span.label {
+	visibility: visible;
+	opacity: 1;
+	width: 100px;
+	padding-right: 20px;
+
+	transition: all .25s;
+}
+
+div#administrative-tools.contracted ul li.admin-tool {}
+div#administrative-tools.contracted ul li.admin-tool span.label {
+	visibility: hidden;
+	opacity: 0;
+	width: 0;
+	padding-right: 0;
+
+	transition: all .25s;
+}
+div#administrative-tools ul li.admin-tool.admin-tool-control {
+	position: absolute;
+	top: 0;
+}
+div#administrative-tools.expanded ul li.admin-tool.admin-tool-control.expand-tool,
+div#administrative-tools.contracted ul li.admin-tool.admin-tool-control.contract-tool {
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+}
+div#administrative-tools.contracted ul li.admin-tool:hover span.over-label {
+	visibility: visible;
+	opacity: 1;
+	height: auto;
+	width: auto;
+
+	transition: all .5s;
+}
+
+/* Páginas de administración */
+.home-block.config-nav {
+	border-bottom: 2px solid #ccc;
+    padding: 0;
+}
+.home-block.config-nav h1,
+.home-block.config-nav h1 * {
+	border-bottom: 0;
+	margin: 0;
+	margin-right: 5px;
+}
+.config-nav-menu {
+	text-align: right;
+}
+.config-nav-menu a {
+	display: inline-block;
+}
+.config-nav-menu a:hover {}

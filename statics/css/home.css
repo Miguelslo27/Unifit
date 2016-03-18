@@ -1,0 +1,54 @@
+/* HOME */
+/*#body .body-inner,*/
+#home .body .body-content {
+	padding: 0;
+}
+#home-slider {
+	width: 1200px;
+	height: 350px;
+	margin: auto;
+}
+.body .body-content .newsletter {
+	width: 1200px;
+	margin: auto;
+	background: #c46f22;
+	text-align: center;
+	padding: 8px;
+	box-sizing: border-box;
+}
+.body .body-content .newsletter > span {
+	color: #fff;
+    display: inline-block;
+    font-size: 22px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.body .body-content .newsletter > form {
+	position: relative;
+	background: #fff;
+	display: inline-block;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	width: 300px;
+}
+.body .body-content .newsletter > form input {
+	width: 300px;
+	height: 30px;
+	margin: 0;
+	border: 0;
+}
+.body .body-content .newsletter > form span.fa {
+	background: rgba(255,255,255,.08);
+	color: #714264;
+	position: absolute;
+	top: 6.5px;
+	right: 9px;
+}
+.home-content {
+	width: 1200px;
+	margin: auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
